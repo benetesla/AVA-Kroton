@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 250px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(103, 167, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-esquerdo {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    color: rgb(16, 253, 253);
+    font-weight: 800;
+    margin: 0;
+}
+
+.login-esquerdo>h1 {
+    color: rgb(16, 253, 253);
+}
+
+.login-direito {
+    width: 50vw;
+    height: 100vh;
+    background: rgb(103, 167, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(61, 172, 216);
+    border-radius: 25px;
+    box-shadow: 0px 10px 40px #105774;
+}
+
+.card-login>h1 {
+    color: rgb(16, 253, 253);
+    font-weight: 800;
+    margin: 0;
+}
+
+.Input-formation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 15px;
+}
+
+.Input-formation>input {
+    width: 110%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #105774;
+    color: aqua;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #105774;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.Input-formation>label {
+    color: rgb(206, 232, 240);
+    margin-bottom: 10px;
+}
+
+.Input-formation>input::placeholder {
+    color: #010b0f;
+}
+
+.login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: rgb(16, 253, 253);
+    background: #0b0d0e;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px 13px #0d0d0e;
+}
