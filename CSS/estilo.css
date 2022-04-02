@@ -9,7 +9,7 @@ body {
 }
 
 .main-login {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: rgb(103, 167, 219);
     display: flex;
@@ -17,13 +17,29 @@ body {
     align-items: center;
 }
 
+@media screen and (max-width: 1000px) {
+    .main-login {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
 .login-esquerdo {
     width: 50vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+    .login-esquerdo {
+        margin: 50px 0;
+    }
+}
+
+.login-esquerdo > h1 {
+    color: rgb(16, 253, 253);
 }
 
 p {
@@ -32,17 +48,30 @@ p {
     margin: 0;
 }
 
-.login-esquerdo>h1 {
-    color: rgb(16, 253, 253);
+.login-esquerdo > img {
+    width: 40vw;
+    height: 40vw;
+}
+
+@media screen and (max-width: 850px) {
+    .login-esquerdo > img {
+        width: 350px;
+        height: 350px;
+    }
 }
 
 .login-direito {
     width: 50vw;
-    height: 100vh;
     background: rgb(103, 167, 219);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .login-direito {
+        width: 90vw;
+    }
 }
 
 .card-login {
@@ -57,7 +86,7 @@ p {
     box-shadow: 0px 10px 40px #105774;
 }
 
-.card-login>h1 {
+.card-login > h1 {
     color: rgb(16, 253, 253);
     font-weight: 800;
     margin: 0;
@@ -69,11 +98,10 @@ p {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 15px;
 }
 
-.Input-formation>input {
-    width: 110%;
+.Input-formation > input {
+    width: 100%;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -85,12 +113,12 @@ p {
     box-sizing: border-box;
 }
 
-.Input-formation>label {
+.Input-formation > label {
     color: rgb(206, 232, 240);
-    margin-bottom: 10px;
+    margin: 10px 0 0 5px;
 }
 
-.Input-formation>input::placeholder {
+.Input-formation > input::placeholder {
     color: #010b0f;
 }
 
